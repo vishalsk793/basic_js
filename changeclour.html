@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+<body style="text-align: center;">
+
+<h1 style="text-align: center;">Choose the colour in dropdown  To Change the Background Color </h1>
+	<br><br>
+	<select name="colorInputColor" id="colorInputColor">
+
+        <option value="yellow">yellow</option>
+        <option value="Red">Red</option>
+        <option value="blue">blue</option>
+        
+       </select>
+	<!-- This is a comment <input class="tab1" type="color" id="colorInputColor">-->
+     <input type="button" id="colorButton" value="Click to change the color" 
+     onclick="changeColor()">
+	<input type="text" id="colorInputText">
+
+<script type="text/javascript">
+	function changeColor(){
+		let color=document.getElementById('colorInputColor').value;
+		document.body.style.backgroundColor=color;
+		document.getElementById('colorInputText').value=color;
+	}
+</script>
+</body>
+</html>
